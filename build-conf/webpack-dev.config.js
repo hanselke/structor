@@ -5,10 +5,10 @@ module.exports = [
     {
         name: "browser",
         entry: {
-            main: './src-client/main.js'
+            main: './src/main.js'
         },
         output: {
-            path: '/Users/ipselon/Development/projects/structor/test/node_modules/structor/static',
+            path: '/Users/hanselke/Dev/structor/test/node_modules/structor/static',
             filename: '[name].js'
         },
         devtool: 'inline-source-map',
@@ -50,7 +50,7 @@ module.exports = [
             "jquery": "jQuery"
         },
         resolve: {
-            modules: ['src-client', 'node_modules'],
+            modules: ['src', 'node_modules'],
             extensions: [
                 '.js',
                 '.jsx',

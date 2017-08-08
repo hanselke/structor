@@ -11,7 +11,7 @@ gulp.task('default', function() {
 });
 
 gulp.task('clean-server-dev', function(){
-    return del(['/Users/ipselon/Development/projects/structor/test/node_modules/structor/server'], {force: true});
+    return del(['/Users/hanselke/Dev/structor/test/node_modules/structor/server'], {force: true});
 });
 
 gulp.task('clean-server', function(){
@@ -19,13 +19,13 @@ gulp.task('clean-server', function(){
 });
 
 gulp.task('build-server-dev', ['clean-server-dev'], function() {
-    return gulp.src('../src-server/**/*.js')
+    return gulp.src('../src/**/*.js')
         .pipe(babel())
-        .pipe(gulp.dest('/Users/ipselon/Development/projects/structor/test/node_modules/structor/server'));
+        .pipe(gulp.dest('/Users/hanselke/Dev/structor/test/node_modules/structor/server'));
 });
 
 gulp.task('build-server', ['clean-server'], function() {
-    return gulp.src('../src-server/**/*.js')
+    return gulp.src('../src/**/*.js')
         .pipe(babel())
         .pipe(uglify())
         .pipe(gulp.dest('../server'));

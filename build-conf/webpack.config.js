@@ -6,7 +6,7 @@ module.exports = [
     {
         name: "browser",
         entry: {
-            main: './src-client/main.js'
+            main: './src/main.js'
         },
         output: {
             path: path.resolve(__dirname, '../static'),
@@ -60,7 +60,7 @@ module.exports = [
             "jquery": "jQuery"
         },
         resolve: {
-            modules: ['src-client', 'node_modules'],
+            modules: ['src', 'node_modules'],
             extensions: [
                 '.js',
                 '.jsx',
